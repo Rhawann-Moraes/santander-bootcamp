@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Grid - Origamid</title>
+</head>
+<style>
+   
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1{
+        text-align: center;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;       
+    }
+    h2, p{
+        margin: 5px;
+
+    }
+    .item{
+        background-color: #f1f1f1;
+        border: 1px solid #e7e7e7;
+        padding: 20px;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;   
+    }
+    .comprar{
+        background-color: #a8f;
+        color: #103;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 4px;  
+        height: 20px;
+        width: 60px;
+        margin: 20px 0 0 0;    
+    }
+</style>
+<body>
+    <h1>Comércio Eletrônico</h1>
+    <div class="grid">
+        <div class="item">
+            <h2>Camisa Polo</h2>
+            <p class="preço">R$ 39 </p>
+            <p>Camisa feita de algodão com detalhes em azul claro</p>
+            <a class="comprar" href="/">Comprar</a>
+        </div>
+        <div class="item">
+            <h2>Bermuda Preta</h2>
+            <p class="preço">R$ 39 </p>
+            <p>Bermuda feita de algodão com detalhes em azul claro</p>
+            <a class="comprar" href="/">Comprar</a>
+        </div>
+        <div class="item">
+            <h2>Calça Jeans</h2>
+            <p class="preço">R$ 39 </p>
+            <p>Calça feita de algodão com detalhes em azul claro</p>
+            <a class="comprar"href="/">Comprar</a>
+        </div>
+        <div class="item">
+            <h2>Camisa azul</h2>
+            <p class="preço">R$ 39 </p>
+            <p>Camisa feita de algodão com detalhes em azul claro</p>
+            <a class="comprar" href="/">Comprar</a>
+        </div>
+    </div>
+    
+</body>
+</html>
