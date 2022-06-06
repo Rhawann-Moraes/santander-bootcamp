@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+   function pulaLinha(){
+       document.write("<br>");
+       document.write("<br>");
+   }
+
+   function mostra(frase){
+       document.write(frase);
+       pulaLinha();
+   }
+
+   function calculaImc(altura, peso){
+      return imc = (peso / (altura*altura));
+      
+   }
+   var nome = prompt("Olá, seja bem vindo(a)! Digite o seu nome " )
+   var altura = prompt( nome + ", para que eu possa calcular o seu índice de massa corporal, " 
+   + "preciso que você me informe a sua altura. Por favor não use vírgula, use o ponto.")
+   var peso = prompt("Ótimo " + nome + ", já estamos quase finalizando, agora preciso que me informe o seu peso.")
+
+   var imc = calculaImc(altura, peso);
+
+   if(imc <= 18.4){
+    document.write("Seu imc é " + imc + ". Atenção! você está abaixo do peso ")
+   }
+   else if(imc >=18.5 && imc <= 24.9){
+       document.write("Seu imc é " + imc + " você está com o peso ideal ")
+   }
+   else if( imc>= 25.0 && imc <= 29.9){
+    document.write("Seu imc é " + imc + ". Exercite-se e cuide da sua alimentação, pois você está com sobrepeso. ")
+   }
+   else if( imc>=30 && imc <= 39.9){
+    document.write("Seu imc é " + imc + ". Cuidado! Você precisa se dedicar mais à sua saúde, pois você está obeso.")
+   }
+   else{
+    document.write("Seu imc é " + imc + ". ATENÇÃO! Você está com uma obesidade grave.")
+   }
+
+</script>
